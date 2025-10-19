@@ -10,9 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
+      # Step 1: Checkout repository using a secret token
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}  # <-- store your PAT in GitHub Secrets
 
       # Step 2: Unzip the file
       - name: Unzip anslayerV1.5.5.zip
