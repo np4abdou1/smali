@@ -1,0 +1,30 @@
+name: Unzip and Commit
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  unzip_and_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Unzip the file
+      - name: Unzip anslayerV1.5.5.zip
+        run: |
+          mkdir -p unzipped
+          unzip -o anslayerV1.5.5.zip -d unzipped
+
+      # Step 3: Commit and push the unzipped files
+      - name: Commit unzipped files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add unzipped/
+          git diff-index --quiet HEAD || git commit -m "Add unzipped files"
+          git push
