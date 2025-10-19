@@ -65,6 +65,7 @@ Key Discoveries:
 • Episode URLs contain multiple backup servers
 • Special decoding needed for some servers (ol4)
 • Retrofit + OkHttp used for networking
+• Required headers: Client-Id and Client-Secret (found in a4/a.smali)
 
 API ENDPOINTS DISCOVERED:
 -------------------------
@@ -157,6 +158,7 @@ API Framework: Retrofit 2
 HTTP Client: OkHttp 3
 Data Format: JSON
 Authentication: Token-based (from AuthEndpoint)
+Required Headers: Client-Id, Client-Secret (ClientInterceptor - a4/a.smali)
 Models: Kotlin data classes (Parcelable)
 
 Git Repository: github.com/np4abdou1/smali
