@@ -6,7 +6,10 @@ This file contains example API requests and responses based on the reverse-engin
 
 **Request:**
 ```bash
-curl -X GET "https://anslayer.com/anime/public/animes/get-published-animes?json=%7B%22query%22%3A%22naruto%22%2C%22page%22%3A1%2C%22limit%22%3A20%7D"
+curl -X GET "https://anslayer.com/anime/public/animes/get-published-animes?json=%7B%22query%22%3A%22naruto%22%2C%22page%22%3A1%2C%22limit%22%3A20%7D" \
+  -H "Client-Id: android-app2" \
+  -H "Client-Secret: 7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd" \
+  -H "Accept: application/json"
 ```
 
 **Decoded JSON Parameter:**
@@ -50,7 +53,10 @@ curl -X GET "https://anslayer.com/anime/public/animes/get-published-animes?json=
 
 **Request:**
 ```bash
-curl -X GET "https://anslayer.com/anime/public/anime/get-anime-details?anime_id=123&fetch_episodes=true&more_info=true"
+curl -X GET "https://anslayer.com/anime/public/anime/get-anime-details?anime_id=123&fetch_episodes=true&more_info=true" \
+  -H "Client-Id: android-app2" \
+  -H "Client-Secret: 7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd" \
+  -H "Accept: application/json"
 ```
 
 **Expected Response Structure:**
@@ -77,7 +83,10 @@ curl -X GET "https://anslayer.com/anime/public/anime/get-anime-details?anime_id=
 
 **Request:**
 ```bash
-curl -X GET "https://anslayer.com/anime/public/episodes/get-episodes?json=%7B%22anime_id%22%3A123%2C%22page%22%3A1%7D"
+curl -X GET "https://anslayer.com/anime/public/episodes/get-episodes?json=%7B%22anime_id%22%3A123%2C%22page%22%3A1%7D" \
+  -H "Client-Id: android-app2" \
+  -H "Client-Secret: 7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd" \
+  -H "Accept: application/json"
 ```
 
 **Decoded JSON Parameter:**
@@ -162,7 +171,10 @@ print(episodes)
 
 **Request:**
 ```bash
-curl -X GET "https://anslayer.com/anime/public/animes/get-published-animes?json=%7B%22query%22%3A%22%22%2C%22page%22%3A1%2C%22genres%22%3A%5B%22Action%22%2C%22Adventure%22%5D%2C%22years%22%3A%5B2023%5D%2C%22sort_by%22%3A%22rating%22%7D"
+curl -X GET "https://anslayer.com/anime/public/animes/get-published-animes?json=%7B%22query%22%3A%22%22%2C%22page%22%3A1%2C%22genres%22%3A%5B%22Action%22%2C%22Adventure%22%5D%2C%22years%22%3A%5B2023%5D%2C%22sort_by%22%3A%22rating%22%7D" \
+  -H "Client-Id: android-app2" \
+  -H "Client-Secret: 7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd" \
+  -H "Accept: application/json"
 ```
 
 **Decoded JSON Parameter:**
@@ -186,12 +198,23 @@ curl -X GET "https://anslayer.com/anime/public/animes/get-published-animes?json=
 
 ## Authentication
 
-If the API requires authentication, you'll need to:
+All API requests require the following headers (found in `a4/a.smali` - ClientInterceptor):
+
+```bash
+-H "Client-Id: android-app2"
+-H "Client-Secret: 7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd"
+-H "Accept: application/json"
+```
+
+For authenticated user requests (optional), you'll need to:
 
 1. Login using the auth endpoint:
 ```bash
 curl -X POST "https://anslayer.com/anime/public/auth/login" \
+  -H "Client-Id: android-app2" \
+  -H "Client-Secret: 7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd" \
   -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "Accept: application/json" \
   -d "email=user@example.com&password=password"
 ```
 
@@ -200,6 +223,9 @@ curl -X POST "https://anslayer.com/anime/public/auth/login" \
 3. Include the token in subsequent requests:
 ```bash
 curl -X GET "https://anslayer.com/anime/public/animes/get-published-animes?json=..." \
+  -H "Client-Id: android-app2" \
+  -H "Client-Secret: 7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd" \
+  -H "Accept: application/json" \
   -H "Authorization: Bearer YOUR_TOKEN_HERE"
 ```
 
