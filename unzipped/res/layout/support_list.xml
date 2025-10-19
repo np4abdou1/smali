@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nguyenhoanglam.progresslayout.ProgressLayout android:id="@id/progressLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:errorButtonTextColor="?colorAccent" app:loadingProgressBarColor="?colorAccent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.anslayer.widget.SupportRefreshLayout android:id="@id/supportRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <io.wax911.support.custom.recycler.SupportRecyclerView android:id="@id/supportRecyclerView" android:padding="4.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.anslayer.widget.SupportRefreshLayout>
+</com.nguyenhoanglam.progresslayout.ProgressLayout>

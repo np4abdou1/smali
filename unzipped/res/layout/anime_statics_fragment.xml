@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/content_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.cardview.widget.CardView android:id="@id/rating_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:cardBackgroundColor="?colorSurface" app:contentPaddingBottom="16.0dip" app:contentPaddingLeft="10.0dip" app:contentPaddingRight="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textAppearance="?textAppearanceBody2" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="التصويتات" android:layout_marginEnd="4.0dip" />
+                <com.github.mikephil.charting.charts.BarChart android:id="@id/rating_chart" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="8.0dip" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/status_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:cardBackgroundColor="?colorSurface" app:contentPadding="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rating_card">
+                <com.github.mikephil.charting.charts.PieChart android:id="@id/userStatsBarChart" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <com.anslayer.widget.ErrorView android:layout_gravity="center" android:id="@id/error_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

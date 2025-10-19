@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="24.0dip" android:layout_height="24.0dip" style="@style/Widget.AppCompat.ProgressBar" />
+    <Button android:layout_gravity="center" android:id="@id/load_state_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="اعادة المحاولة" style="@style/Theme.Widget.Button" />
+</FrameLayout>

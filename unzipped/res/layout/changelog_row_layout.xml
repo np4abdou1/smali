@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/chg_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:gravity="center_vertical" android:id="@id/chg_textbullet" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/changelog_row_bulletpoint" android:paddingStart="@dimen/chglib_material_keyline1" android:paddingEnd="0.0dip" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:gravity="center_vertical" android:id="@id/chg_text" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/listPreferredItemHeightSmall" android:paddingStart="@dimen/chglib_material_keyline1" android:paddingEnd="@dimen/chglib_material_keyline1" />
+</LinearLayout>

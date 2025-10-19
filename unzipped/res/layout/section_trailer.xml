@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceHeadline6" android:textStyle="bold" android:id="@id/trailer_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="العرض الدعائي" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/thumbnail" android:background="@drawable/rounded_rectangle_trailer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" app:layout_constraintDimensionRatio="16:9" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/trailer_head" />
+    <FrameLayout android:background="@drawable/circular_shadow" android:layout_width="56.0dip" android:layout_height="56.0dip" app:layout_constraintBottom_toBottomOf="@id/thumbnail" app:layout_constraintEnd_toEndOf="@id/thumbnail" app:layout_constraintStart_toStartOf="@id/thumbnail" app:layout_constraintTop_toTopOf="@id/thumbnail">
+        <ImageView android:layout_gravity="center" android:id="@id/play_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:contentDescription="@null" app:srcCompat="@drawable/ic_player_play" app:tint="@color/md_white_1000" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

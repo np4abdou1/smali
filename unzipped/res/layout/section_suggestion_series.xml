@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:textStyle="bold" android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/heading_series_suggestions" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <io.wax911.support.custom.widget.SingleLineTextView android:textAppearance="?textAppearanceHeadline6" android:textSize="18.0sp" android:textColor="?colorAccent" android:layout_gravity="start|center" android:id="@id/headerLoadMore" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_load_more" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    </FrameLayout>
+    <io.wax911.support.custom.recycler.SupportRecyclerView android:id="@id/seriesSuggestions" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:paddingStart="16.0dip" android:paddingEnd="12.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

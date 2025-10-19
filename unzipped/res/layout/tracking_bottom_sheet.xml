@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_gravity="end" android:padding="16.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="56.0dip" android:text="قائمتي" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_plan_to_watch" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/check_plan_to_watch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" app:srcCompat="@drawable/ic_chip_checked" app:tint="?colorOnSurface" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="?colorOnSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plan_to_watch" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" app:srcCompat="@drawable/ic_baseline_add_to_queue_24" app:tint="?iconColor" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_watching" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/check_watching" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" app:srcCompat="@drawable/ic_chip_checked" app:tint="?colorOnSurface" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="?colorOnSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/currently_watching" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" app:srcCompat="@drawable/ic_baseline_play_circle_outline_24" app:tint="?iconColor" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_watched" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/check_watched" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" app:srcCompat="@drawable/ic_chip_checked" app:tint="?colorOnSurface" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="?colorOnSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watched" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" app:srcCompat="@drawable/ic_baseline_play_circle_filled_24" app:tint="?iconColor" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_on_hold" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/check_on_hold" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" app:srcCompat="@drawable/ic_chip_checked" app:tint="?colorOnSurface" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="?colorOnSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on_hold" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" app:srcCompat="@drawable/ic_baseline_pause_presentation_24" app:tint="?iconColor" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_dropped" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/check_dropped" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" app:srcCompat="@drawable/ic_chip_checked" app:tint="?colorOnSurface" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="?colorOnSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dropped" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" app:srcCompat="@drawable/ic_baseline_remove_from_queue_24" app:tint="?iconColor" />
+    </LinearLayout>
+</LinearLayout>

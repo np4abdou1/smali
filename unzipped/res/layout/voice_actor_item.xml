@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:focusable="true" android:clickable="true" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:foreground="?selectableItemBackground" android:scaleX="-1.0" app:cardCornerRadius="8.0dip" style="@style/Theme.Widget.CardView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/avatar" android:layout_width="81.0dip" android:layout_height="99.0dip" android:scaleType="centerCrop" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintStart_toEndOf="@id/avatar" app:layout_constraintTop_toTopOf="parent" style="@style/TextAppearance.Regular.Body1" />
+        <TextView android:id="@id/job" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintStart_toEndOf="@id/avatar" app:layout_constraintTop_toBottomOf="@id/name" style="@style/TextAppearance.Regular.Body1.Secondary" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

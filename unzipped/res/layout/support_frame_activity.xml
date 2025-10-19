@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout android:id="@id/circularRevealCoordinator" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/support_toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/support_frame" />
+</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>

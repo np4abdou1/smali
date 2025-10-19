@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/comment_author_timestamp_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_marginEnd="16.0dip">
+        <TextView android:textColor="?yt_text_secondary" android:ellipsize="end" android:gravity="left" android:id="@id/full_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" android:layout_marginEnd="48.0dip" style="@style/TextAppearance.Regular.Caption" />
+        <io.wax911.support.custom.widget.SingleLineTextView android:textColor="?yt_text_secondary" android:id="@id/comment_date" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/TextAppearance.Regular.Caption" />
+    </LinearLayout>
+    <TextView android:gravity="right" android:id="@id/comment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/comment_author_timestamp_container" android:lineSpacingExtra="4.0dip" android:paddingEnd="0.0dip" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" style="@style/TextAppearance.Regular.Body1" />
+</RelativeLayout>

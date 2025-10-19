@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <uk.co.senab.photoview.PhotoView android:id="@id/image_full" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <com.google.android.material.appbar.MaterialToolbar android:theme="@style/ThemeOverlay.Widget.Toolbar.MyProfile" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="@drawable/back_image" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

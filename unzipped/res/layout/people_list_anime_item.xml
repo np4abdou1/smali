@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textAppearance="?textAppearanceBody1" android:textColor="?colorAccent" android:layout_gravity="start" android:id="@id/see_more" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_load_more" android:layout_marginStart="3.0dip" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:textStyle="bold" android:id="@id/header" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/currently_watching" android:layout_weight="1.0" />
+    </LinearLayout>
+    <io.wax911.support.custom.recycler.SupportRecyclerView android:orientation="horizontal" android:id="@id/recycler" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:paddingStart="16.0dip" android:paddingEnd="14.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/container" />
+</LinearLayout>

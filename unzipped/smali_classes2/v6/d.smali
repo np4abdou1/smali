@@ -1,0 +1,36 @@
+.class public final synthetic Lv6/d;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Landroidx/lifecycle/z;
+
+
+# instance fields
+.field public final synthetic f:Lv6/e;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lv6/e;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lv6/d;->f:Lv6/e;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final B(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lv6/d;->f:Lv6/e;
+
+    check-cast p1, Lx4/f;
+
+    invoke-static {v0, p1}, Lv6/e;->E(Lv6/e;Lx4/f;)V
+
+    return-void
+.end method

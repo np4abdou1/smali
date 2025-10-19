@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:textStyle="bold" android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/heading_series_related" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <io.wax911.support.custom.recycler.SupportRecyclerView android:id="@id/seriesRelated" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:paddingStart="16.0dip" android:paddingEnd="12.0dip" />
+</LinearLayout>
