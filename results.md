@@ -21,6 +21,16 @@ The app uses form-encoded POST requests with authentication headers. Based on th
 - Password reset
 - Token-based authentication
 
+### Required Headers
+
+All API requests require the following headers (found in `a4/a.smali` - ClientInterceptor):
+
+- `Client-Id: android-app2` - Application identifier
+- `Client-Secret: 7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd` - Application secret key
+- `Accept: application/json` - Accept JSON responses
+- `Content-Type: application/x-www-form-urlencoded` - For POST/PUT/PATCH requests
+- `Authorization: Bearer <token>` - Optional, for authenticated requests (user login)
+
 ## Main Data Models
 
 ### Series/Anime Model (`p4/p.smali`)

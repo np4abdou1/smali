@@ -27,6 +27,8 @@ class AnslayerAPI:
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36',
             'Accept': 'application/json',
+            'Client-Id': 'android-app2',
+            'Client-Secret': '7befba6263cc14c90d2f1d6da2c5cf9b251bfbbd',
             'Content-Type': 'application/x-www-form-urlencoded'
         })
     
