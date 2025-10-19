@@ -1,5 +1,9 @@
 name: Unzip and Commit
 
+# Give the workflow permission to write to the repository
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ "main" ]
@@ -10,20 +14,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository using a secret token
+      # Step 1: Checkout repository with your PAT
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT_TOKEN }}  # <-- store your PAT in GitHub Secrets
+          token: ${{ secrets.PAT_TOKEN }}
 
-      # Step 2: Unzip the file
+      # Step 2: Unzip your file
       - name: Unzip anslayerV1.5.5.zip
         run: |
           mkdir -p unzipped
           unzip -o anslayerV1.5.5.zip -d unzipped
 
-      # Step 3: Commit and push the unzipped files
-      - name: Commit unzipped files
+      # Step 3: Commit and push
+      - name: Commit and push unzipped files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
